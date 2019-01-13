@@ -306,7 +306,7 @@ response:
 
 ## Dogs Structure 'PUT':
 ```
-url: https://assignment-task.herokuapp.com/dogs.json
+url: https://assignment-task.herokuapp.com/dogs/1.json
 method: 'PUT'
 body:
 {
@@ -326,6 +326,62 @@ response:
     "url": "https://assignment-task.herokuapp.com/dogs/1.json"
 }
 
+```
+
+## Dogs Strunctire 'POST':
+```
+url: https://assignment-task.herokuapp.com/dogs.json
+method: 'POST'
+body:
+{
+	"dog": {
+		"name": "UBER",
+		"age": 5,
+    		"image_url": "https://cdn2-www.dogtime.com/assets/uploads/gallery/poodle-dog-breed-pictures/elegence-1.jpg",
+	    	"user_id": 1,
+    		"breed_id": 2
+	}
+}
+
+response:
+{
+    "id": 19,
+    "name": "UBER",
+    "age": 5,
+    "image_url": "https://cdn2-www.dogtime.com/assets/uploads/gallery/poodle-dog-breed-pictures/elegence-1.jpg",
+    "created_at": "2019-01-13T12:06:23.368+05:30",
+    "updated_at": "2019-01-13T12:06:23.368+05:30",
+    "url": "https://assignment-task.herokuapp.com/dogs/19.json"
+}
+```
+
+## Breed Structure 'GET':
+```
+url: https://assignment-task.herokuapp.com/breeds.json
+method: 'GET'
+response: [
+    {
+        "id": 1,
+        "name": "Poodle",
+        "created_at": "2019-01-11T17:55:57.760+05:30",
+        "updated_at": "2019-01-11T17:55:57.760+05:30",
+        "url": "https://assignment-task.herokuapp.com/breeds/1.json"
+    },
+    {
+        "id": 2,
+        "name": "Bulldog",
+        "created_at": "2019-01-11T17:55:57.776+05:30",
+        "updated_at": "2019-01-11T17:55:57.776+05:30",
+        "url": "https://assignment-task.herokuapp.com/breeds/2.json"
+    },
+    {
+        "id": 3,
+        "name": "Pug",
+        "created_at": "2019-01-11T17:55:57.787+05:30",
+        "updated_at": "2019-01-11T17:55:57.787+05:30",
+        "url": "https://assignment-task.herokuapp.com/breeds/3.json"
+    }
+]
 ```
 
 
